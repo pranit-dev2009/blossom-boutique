@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blossom Boutique</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: #fffafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background: #ffdee9;
+  padding: 1rem 0;
+  border-bottom: 2px solid #fbb1d5;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d63384;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d63384;
+}
+
+.hero {
+  background: url('  https://img.freepik.com/premium-photo/pink-color-pattern-background_1030147-17592.jpg ') center/cover no-repeat;
+  height: 800PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p
+ {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #d63384;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b71d68;
+}
+
+.products {
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.products h3 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.product-grid
+ {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  background-attachment: fixed;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #fbb1d5;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+.img:hover{
+  transform: scale(1.1);
+  transition: 2S;
+}
+
+.product-card:hover {
+  transform:  scale(1.1);
+}
+
+.product-card img 
+{
+  width: 100%;
+  border-radius: 10X;
+}
+
+.product-card h4 {
+  margin: 1rem 0 0.5rem;
+  color: #d63384;
+}
+
+footer {
+  background: #fbb1d5;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.hero .hero-content
+{
+    background-image: url();
+}
+ .products {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .products h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: #F49BAB;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    background: #FFE1E0;
+  }
+
+  .product-card {
+    background: #fff;
+    border: 1px solid #fbb1d5;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform 0.8s;
+  }
+  
+
+  .img:hover
+   {
+    transform: scale(1.1);
+    transition: 2S;
+  }
+
+  .product-card:hover {
+    transform: scale(1.1);
+  }
+
+  .product-card img {
+    width: 100%;
+    border-radius: 10X;
+  }
+    .nav ul li a
+    {
+      text-decoration: none;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+  .nav ul li a:hover
+  {
+    background:white;
+    color:black;
+    transition: 2s;
+  }
+   .special {
+  background: url(' https://static.wixstatic.com/media/c837a6_bf3c8f68e22347cf98b0a94d123e95e4~mv2.jpg/v1/fill/w_1185,h_701,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_bf3c8f68e22347cf98b0a94d123e95e4~mv2.jpg') center/cover no-repeat;
+  height: 700PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+.special-content {
+  background: #e6a9d2cc;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p
+ {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #d63384;
+  color: white;
+  padding-top: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b71d68;
+}
+.products1 {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .products h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .product-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .product-card {
+    background: #fff;
+    border: 1px solid #fbb1d5;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform 1.3s;
+  }
+  
+
+  .img:hover
+   {
+    transform: scale(1.1);
+    transition: 2S;
+  }
+
+  .product-card:hover {
+    transform: scale(1.1);
+  }
+
+  .product-card img {
+    width: 100%;
+    border-radius: 10X;
+  }
+   .products1 h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: #F49BAB;
+  }
+  .products1 {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #F7CFD8;
+  }
+
+
+
+
+  
+
+  
+</style>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Blossom Boutique</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop </a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Fresh Flowers Delivered to Your Door</h2>
+      <p>Brighten someone’s day with beautiful blooms.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="products">
+    <h3>Our Favorites</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src=" https://cdn.igp.com/f_auto,q_auto,t_prodl/products/p-valentine-25-red-roses-bouquet-110408-m.jpg" alt="Roses">
+        <h4>Red Rose Bouquet</h4>
+        <p>$29.99</p>
+      </div>
+      <div class="product-card">
+        <img src=" https://blacktulipflowers.in/wp-content/uploads/2024/01/RT_9709.png" alt="Tulips">
+        <h4>Spring Tulips</h4>
+        <p>$24.99</p>
+      </div>
+      <div class="product-card">
+        <img src=" https://cdn.flowersnfruits.com/uploads/product/flowers_n_fruits/OCT2024/1728455572006-MixFlowersBouquet.webp" alt="Mixed Bouquet">
+        <h4>Mixed Blooms</h4>
+        <p>$34.99</p>
+      </div>
+    </div>
+  </section>
+   <section class="products">
+    <h3>MOST LOVED</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="  https://freshknots.in/wp-content/uploads/2024/09/FreshKnots_WhiteRoses.jpg" alt="Roses">
+        <h4 style="color: #d63384;">White Rose Bouqute </h4>
+        <p>$29.99</p>
+      </div>
+      <div class="product-card">
+        <img src=" https://lovelyfloweers.com/cdn/shop/files/442436669_17904226349977382_6319509939042494246_n.jpg?v=1723826837&width=500" alt="Tulips">
+        <h4 style="color: #d63384;">Heart Bouquet</h4>
+        <p>$24.99</p>
+      </div>
+      <div class="product-card">
+        <img
+          src=" https://cdn.flowersnfruits.com/uploads/product/flowers_n_fruits/OCT2024/1728455572006-MixFlowersBouquet.webp"
+          alt="Mixed Bouquet">
+        <h4 style="color: #d63384;">Mixed Blooms</h4>
+        <p>$34.99</p>
+      </div>
+    </div>
+  </section>
+   <section class="special">
+    <div class="special-content">
+      <h2>10% Off Selected Flowers for Valentine's Day</h2>
+      <p>Brighten someone’s day with beautiful blooms.</p><br>
+      <a href="#3" class="btn">Order Now</a>
+    </div>
+  </section> <section class="products1">
+    <h3 >Valentine special</h3>
+    <div class="product-grid1">
+      <div class="product-card">
+        <img src=" https://www.fareastflora.com/cdn/shop/files/VH20.jpg?v=1735615430&width=3200" alt="Roses">
+        <h4 style="color: #d63384;">Rose Bouqute </h4>
+        <p>$29.99</p>
+      </div>
+      <div class="product-card">
+        <img src="  https://bloomthis.co/cdn/shop/files/bloomthis-bouquet-amaal-red-rose-bouquet-1080x1080-01_deaf6337-1730-492d-8eb7-08ecb9360ba7.jpg?v=1704258673" alt="Tulips">
+        <h4 style="color: #d63384;"> Bouquet</h4>
+        <p>$24.99</p>
+      </div>
+      <div class="product-card">
+        <img
+          src="  https://www.mybaskets.ca/cdn/shop/files/valentines-dream-bear_1600x.jpg?v=1704400778"
+          alt="Mixed Bouquet">
+        <h4 style="color: #d63384;">Spc Boutique</h4>
+        <p>$34.99</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Blossom Boutique. All rights reserved.</p>
+  </footer>
+</body>
+</html>
